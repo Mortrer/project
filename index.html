@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+	<title>Control de Inventario</title>
+</head>
+<body>
+	<!--Barra de navegacion -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand text-white">
+			<span class="oi oi-home" title="home" aria-hidden="true"></span>
+		</a>
+		<button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Inicio</a>
+				</li>	
+				<li class="nav-item">
+					<a href="Counsulta.html" class="nav-link">Consultas</a>
+				</li>		
+			</ul>
+		</div>
+	</nav>
+	<!--Fin barra de navegacion -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Ingreso de producto</h1>
+			<br>
+			<br>
+			<form  name="formulario" action="registro.php"  method="post">
+				
+							<span class="input-group-text" id="cyt">Serial y Tipo</span>
+						
+						<input type="text" name="serial" id="serial" class="form-control" placeholder="Serial">
+						<input type="text" name="tipo" id="tipo" class="form-control" placeholder="Tipo: ej Router">
+				
+					<br>
+					<br>
+					
+							<span class="input-group-text" id="nyp">Marca y modelo</span>
+					
+						<input type="text" name="marca" id="marca" class="form-control" placeholder="Marca">
+						<input type="text" name="modelo" id="modelo" class="form-control" placeholder="Modelo">
+					
+					<br>
+					<br>
+					
+						
+							<span class="input-group-text" id="nyp">Unidades y Cantidad</span>
+						
+						<input type="text" name="unidades" id="unidades" class="form-control" placeholder="Unidad; m, gr, lb, etc ">
+						<input type="text" name="cantidad" id="cantidad" class="form-control" placeholder="Cantidad">
+					
+				
+				<input type="submit">
+			</form>	
+		</div>
+		
+		
+	</div>
+
+
+</body>
+</html>
